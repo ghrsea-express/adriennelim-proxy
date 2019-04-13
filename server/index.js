@@ -17,6 +17,12 @@ app.use('/product/*', (req, res) => {
     .catch(err => res.statusCode(500).send(err))
 });
 
+app.use('/image/*', (req, res) => {
+    axios[req.method.toLowerCase()](`http://ec2-3-16-29-88.us-east-2.compute.amazonaws.com:3003${req.originalUrl}`)
+    .then(({data}) => res.send(data))
+    .catch(err => res.statusCode(500).send(err))
+});
+
 app.use('*', express.static(__dirname + '/../public/index.html'));
 
 let port = process.env.PORT || 3000;

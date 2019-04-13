@@ -1,7 +1,12 @@
-#product {
-    width: 500px;
+#container-product-checkout {
+    display: flex;
 }
 
-#checkout {
-    width: 500px
+#Checkout {
+    width: 200px;
+    margin-top: 50px;
+}
+
+#product {
+    width: 1000px;
 }
