@@ -1,6 +1,10 @@
 #container-product-checkout {
     display: flex;
 }
+#container-product-checkout {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #Checkout {
     width: 200px;
